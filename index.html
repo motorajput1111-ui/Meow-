@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YiXuan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000428,#004e92);
+    font-family:Poppins, sans-serif;
+    color:white;
+}
+
+.container{
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:18px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+button{
+    border:none;
+    padding:16px 40px;
+    font-size:22px;
+    border-radius:40px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff4d6d;
+    box-shadow:0 0 25px rgba(255,77,109,0.9);
+}
+
+#videoBox{
+    display:none;
+    margin-top:20px;
+}
+
+.reel{
+    width:90%;
+    max-width:360px;
+    margin:auto;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(255,0,120,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Tap the name 💙</h2>
+
+    <button onclick="playVideo()">YiXuan ✨</button>
+
+    <div id="videoBox">
+        <h3>For YiXuan 💖</h3>
+
+        <div class="reel">
+            <iframe 
+                src="https://www.instagram.com/reel/DUNg7Jxjm3w/embed"
+                width="100%" 
+                height="450"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+function playVideo(){
+    document.getElementById("videoBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>
